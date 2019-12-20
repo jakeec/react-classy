@@ -13,7 +13,7 @@
     "react": "^16.12.0"
   },
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "node build && tsc"
   },
   "repository": {
     "type": "git",

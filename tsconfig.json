@@ -2,7 +2,9 @@
   "compilerOptions": {
     "lib": ["ES2015"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "declaration": true,
     "outDir": "dist"
-  }
+  },
+  "include": ["src/**/*"]
 }
