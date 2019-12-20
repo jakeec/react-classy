@@ -1,0 +1,28 @@
+{
+  "name": "react-classy",
+  "version": "1.0.0",
+  "description": "Simple library in the same vein as styled-components but for className",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "react": "^16.12.0"
+  },
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeec/react-classy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeec/react-classy/issues"
+  },
+  "homepage": "https://github.com/jakeec/react-classy#readme"
+}

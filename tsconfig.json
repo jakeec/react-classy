@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "dist"
+  }
+}
