@@ -49,16 +49,12 @@ const MyDiv = classy.div`
     bg--blue
     ${props => (props.rounded ? "br--md" : "")}
 `;
-```
 
-```jsx
 const MySquaredDiv = () => {
   // this MyDiv component does not receive the 'rounded' prop (equivalent to doing rounded={false}) so the border-radius class br--md is not applied
   return <MyDiv />;
 };
-```
 
-```jsx
 const MyRoundedDiv = () => {
   // this MyDiv component does receive the 'rounded' prop (shorthand for rounded={true}) so the border-radius class is applied
   return <MyDiv rounded />;
