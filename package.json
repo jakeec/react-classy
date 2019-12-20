@@ -1,8 +1,8 @@
 {
-  "name": "react-classy",
-  "version": "1.0.0",
+  "name": "@jakeec/react-classy",
+  "version": "1.0.3",
   "description": "Simple library in the same vein as styled-components but for className",
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "react": "^16.12.0"
@@ -10,10 +10,15 @@
   "devDependencies": {
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.17",
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "prepublish": "node build && tsc"
+    "prepublish": "node build && rm -rf ./dist && npm run build",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,7 +26,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jakeec/react-classy/issues"
   },

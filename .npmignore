@@ -1,3 +1,4 @@
-node_modules/
 build/
-dist/
+src/
+webpack.config.js
+.gitignore
