@@ -4,7 +4,7 @@ Simple library in the same vein as styled-components but for className
 
 ## Installation
 
-```
+```bash
 npm i react-classy
 ```
 
