@@ -1,3 +1,3 @@
-import classy from "./classy";
+import classy from './classy';
 
 export default classy;
