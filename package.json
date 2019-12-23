@@ -1,6 +1,6 @@
 {
   "name": "@jakeec/react-classy",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple library in the same vein as styled-components but for className",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",

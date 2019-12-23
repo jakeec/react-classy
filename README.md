@@ -13,25 +13,31 @@ npm i react-classy
 ### Basic usage
 
 ```jsx
-import classy from "react-classy";
+import classy from 'react-classy';
 
 const MyDiv = classy.div`
-    flex-container
-    mb--sm
-    ta--center
-    bg--blue
+  flex-container
+  mb--sm
+  ta--center
+  bg--blue
 `;
 
 const MyHeader = classy.h1`
-    fw--bold
-    fs--lg
-    ts--black--sm
+  fw--bold
+  fs--lg
+  ts--black--sm
+`;
+
+const MySecondHeader = classy(MyHeader)`
+  fc--red
+  td--underline
 `;
 
 const MyComponent = () => {
   return (
     <MyDiv>
       <MyHeader>Hello!</MyHeader>
+      <MySecondHeader>Hello!</MySecondHeader>
     </MyDiv>
   );
 };
@@ -40,14 +46,14 @@ const MyComponent = () => {
 ### Conditional classes
 
 ```jsx
-import classy from "react-classy";
+import classy from 'react-classy';
 
 const MyDiv = classy.div`
-    flex-container
-    mb--sm
-    ta--center
-    bg--blue
-    ${props => (props.rounded ? "br--md" : "")}
+  flex-container
+  mb--sm
+  ta--center
+  bg--blue
+  ${props => (props.rounded ? 'br--md' : '')}
 `;
 
 const MySquaredDiv = () => {
